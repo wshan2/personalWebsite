@@ -1,69 +1,143 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nav Bar Test</title>                           <!-- Give Title -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+
+	<head> 
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Jenny Shan</title>                           <!-- Give Title -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Jenny Shan">
+		
+		<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+		<link rel="stylesheet" media="screen and (max-width:480px)" href="css/stylesmobile.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+	
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		<link href="https://fonts/googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js" ></script>
+		
+	
+		<link href="https://fonts/googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	
 </head>
+
+    
 <body>
 
-	<style type="text/css">
+	<nav>
+		<div class="nav-wrapper red lighten-3">
+			<a href="index.html" class="brand-logo">Jenny Shan</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="Contact.html">Contact</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12">
+				<div class="card">
+					<div class="card-image">
+						<img src="images/profile.JPG" class = "personal_pic" alt="Jenny Shan">
+					</div>
+					
+					<div id = "introduction">
+						<div class = col>
+							<p>Hi, I am Jenny Shan.</p>
+							<p>I am currenly a junior at Carnegie Mellon University.</p>
+							<p>I major in Statistics and Machine Learning, and minor in Business Analytics and Optimization and Computer Science.</p>
+							<p>I love Hiphop and enjoy watching Sci-Fi movies. </p>
+							<p>I have a strong quantitative background and a great passion for data science and business analytics. </p>
+							<p>I am interested in 2023 Summer Internships in Data Science and Quantitative Research positions. </p>
+						</div>
+					</div>
+				</div>
+						
+
+		<p class = "subtitles">Skills</p>
+		<ul class="collapsible">
+			<li>
+				<div class="collapsible-header">Machine Learning</div>
+				<div class="collapsible-body">
+					<span>Pandas</span><br>
+					<span>Pytorch</span>
+				</div>
+			</li>
+			<li>
+				<div class="collapsible-header">Database Design and Development</div>
+				<div class="collapsible-body">
+					<span>SQL</span><br>
+					<span>NoSQL</span><br>
+					<span>MongoDB</span><br>
+					<span>Snowflake</span>
+				</div>
+			</li>
+			<li>
+				<div class="collapsible-header">Product Management</div>
+				<div class="collapsible-body">
+					<span>A/B Testing</span><br>
+					<span>Business Optimization</span>
+				</div>
+			</li>
+			</ul>
+			
+			<a href="Wenjing Shan-Resume.pdf" target="_blank"><strong class = "subtitles">My Resume</strong></a>
+
+			<p class = "subtitles">Coursework Highlights</p>
+			<!-- users can click on different school years to check my previous schedule -->
+
 		
-		body {
-			margin: 0;
-		}
-
-		/* NAV BAR */
-
-		.nav-bar {
-			width: 100%;
-			height: 50px;
-			margin: 0;
-			background: black;
-
-			/* Toggle between static and sticky */
-
-			/*position: sticky;
-			top: 0; */
-		}
-
-		.nav-bar > .element {
-			width: 19.5%;
-			line-height: 50px;
-			text-align: center;
-			color: white;
-			display: inline-block;
-			margin: 0;
-			font-family: Arial;
-			text-decoration: none;
-		}
-
-		.nav-bar > .element:hover { 
-  			text-decoration: underline;
-		}	
+			<div class="col s12">
+				<p class="col s6">Computer Science</p><p class="col s6">Statistics</p>
+				<p class="col s6">10301: Introduction to Machine Learning</p><p class="col s6">36401: Modern Regression</p>
+				<p class="col s6">11485: Introduction to Deep Learning</p><p class="col s6"> 36402: Advanced Methods for Data Analysis</p>
+				<p class="col s6">15213: Introduction to Computer Systems</p><p class="col s6">36350: Statistical Computing</p>
+				<p class="col s6">15150: Introduction to Functional Programming</p><p class="col s6">70455: Data Management Fundamentals</p>
+				<p class="col s6">70467: Machine Learning for Business Analytics</p><p class="col s6">36315: Statistical Graphics & Visualization</p>
+			</div>
+			
+					
+		</div>
+	</div>
+</div>
+	
 
 
-		/* BODY */
-
-		.content {
-			width: 80%;
-			margin-left: 10%;
-		}
-
-	</style>
-
-    <div class=nav-bar>
-    	<a href='index.html' class=element> Home </a>
-    	<a href='nav_bar.html' class=element> Resume </a>
-    	<a href='nav_bar.html' class=element> Projects </a>
-        <a href='nav_bar.html' class=element> Study Notes </a>
-    	<a href='Contact.html' class=element> Contact </a>
-    </div>
-
-    <div class=content>
-    	<p> I am Jenny Shan. <p>
-    </div>
-
+	
+<footer class="page-footer red lighten-3">
+	<div class="container">
+		<div class="row">
+			<div class='col l12 s12'>
+				<a href="https://www.linkedin.com/in/wenjing-shan1/"><img src="images/linkedIn.png" alt="linkedIn Logo"/></a>
+				<a href="mailto:wshan2@andrew.cmu.edu" target="_blank"><img src="images/email.png" alt="email icon"/></a>
+				<a href="https://github.com/wshan2" target="_blank"><img src="images/github.png" alt="Github Logo"/></a>
+				<!--Image from https://www.flaticon.com/premium-icon/facebook-logo_2392485-->
+				
+				<br/>
+				&copy; Wenjing Jenny Shan -2022-
+			</div>
+		</div>
+	</div>
+</footer>
+	
 </body>
+
 </html>

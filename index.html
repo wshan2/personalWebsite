@@ -1,69 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nav Bar Test</title>                           <!-- Give Title -->
+    <title>Jenny Shan</title>                           <!-- Give Title -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Jenny Shan">
+
+	<!-- External Links to CSS files -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="screen and (max-width:480px)" href="css/stylesmobile.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+	<!-- External Links to JS files -->
+	<script src="js/jquery-3.4.1.min.js" ></script>
+	<script src="js/scripts.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jquery.lightbox.min.js" ></script>
+
+
+	<link href="https://fonts/googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
 </head>
+
 <body>
 
-	<style type="text/css">
+	<body>
+	
+		<section id ="sec-1">
+		<nav>
+			<div class="nav-wrapper red lighten-3">
+				<a href="index.html" class="brand-logo">Jenny Shan</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+					
+				</ul>
+			</div>
+		</nav>
 		
-		body {
-			margin: 0;
-		}
-
-		/* NAV BAR */
-
-		.nav-bar {
-			width: 100%;
-			height: 50px;
-			margin: 0;
-			background: black;
-
-			/* Toggle between static and sticky */
-
-			/*position: sticky;
-			top: 0; */
-		}
-
-		.nav-bar > .element {
-			width: 19.5%;
-			line-height: 50px;
-			text-align: center;
-			color: white;
-			display: inline-block;
-			margin: 0;
-			font-family: Arial;
-			text-decoration: none;
-		}
-
-		.nav-bar > .element:hover { 
-  			text-decoration: underline;
-		}	
-
-
-		/* BODY */
-
-		.content {
-			width: 80%;
-			margin-left: 10%;
-		}
-
-	</style>
-
-    <div class=nav-bar>
-    	<a href='index.html' class=element> Home </a>
-    	<a href='nav_bar.html' class=element> Resume </a>
-    	<a href='nav_bar.html' class=element> Projects </a>
-        <a href='nav_bar.html' class=element> Study Notes </a>
-    	<a href='Contact.html' class=element> Contact </a>
-    </div>
-
-    <div class=content>
-    	<p> I am Jenny Shan. <p>
-    </div>
+		
+			<div class="container">
+				<div class = "greeting">
+					<header> 
+						<h3>Hi, I am <span class = highlighted_name>Jenny Shan</span></h3><br/>
+						<h3>I am from Carnegie Mellon University</h3><br/>
+						<h3>Major in Statistics and Machine Learning</h3>
+					</header>
+				</div>
+				<a href="#sec-2">
+					<div class = "scroll-down"></div>
+				</a>
+				
+			</div>
+		</section>
+	
+		<section id ="sec-2">
+			<div class="container">
+				<div id="content">
+					<h3>Project</h3>
+				<div id="content-gallery">
+					<p>Click on the picture to see the detailed image.</p>
+				<div id="gallery">
+				<div id="galleryIcon1">
+					<div id="Shadow1" class = "box">
+						<a href="images/maze.png" title="15-112 Term Project - The Maze Runner">
+						<img src="images/maze.png" class = "thumbnail_photo" alt="The Maze Runner Cover"/></a>
+						<div class = "project-description">
+							<p>Name: The Maze Runner</p>
+							<p>Description: Multiplayer Maze Escape</p>
+							<p>Modules: Python</p>
+							<p>Features: Random Maze Generator, Multiplayer, Animation</p>
+						</div>
+					</div>
+				</div>
+	
+				<div id="galleryIcon2">
+					<div id="Shadow2" class = "box">
+						<a href="images/poster.png" title="CMU Course Landscape Scan: Data & Information Literacy">
+						<img src="images/poster.png" class = "thumbnail_photo" alt="Poster File"/></a>
+						<div class = "project-description">
+							<p>Name: CMU Course Landscape Scan: Data & Information Literacy</p>
+							<p>Description: Statistics Research</p>
+							<p>Modules: R, SQL</p>
+							<p>Features: (Structured) Topic Modeling, Text Mining</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				</div>
+			
+			</div>
+			</div>
+		</section>
+	<footer class="page-footer red lighten-3">
+		<div class="container">
+			<div class="row">
+				<div class='col l12 s12'>
+					<a href="https://www.linkedin.com/in/wenjing-shan1/"><img src="images/linkedIn.png" alt="linkedIn Logo"/></a>
+					<a href="mailto:wshan2@andrew.cmu.edu" target="_blank"><img src="images/email.png" alt="email icon"/></a>
+					<a href="https://github.com/wshan2" target="_blank"><img src="images/github.png" alt="Github Logo"/></a>
+					<!--Image from https://www.flaticon.com/premium-icon/facebook-logo_2392485-->
+					
+					<br/>
+					&copy; Wenjing Jenny Shan -2022-
+				</div>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
